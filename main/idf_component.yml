@@ -1,0 +1,13 @@
+dependencies:
+  protocol_examples_common:
+    path: ${IDF_PATH}/examples/common_components/protocol_examples_common
+  espressif/esp_wifi_remote:
+    version: ">=0.1.12"
+    rules:
+      - if: "target in [esp32p4, esp32h2]"
+  LED:
+    git: https://github.com/Sorawit255/LED_Test.git
+    path: components/LED
+  SEVENSEGMENT:
+    git: https://github.com/Sorawit255/Seven_segment.git
+    path: components/SevenSegment 
